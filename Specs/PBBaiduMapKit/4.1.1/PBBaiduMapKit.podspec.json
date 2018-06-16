@@ -19,6 +19,7 @@
     "sha1": "b7788679a19709c1c583e750d6e274883feaf26c"
   },
   "vendored_frameworks": "*.framework",
+  "resources": "BaiduMapAPI_Map.framework/Resources/mapapi.bundle",
   "frameworks": [
     "CoreLocation",
     "QuartzCore",
