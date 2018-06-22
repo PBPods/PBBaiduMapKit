@@ -16,19 +16,19 @@
   },
   "source": {
     "http": "https://github.com/PBPods/PBBaiduMapKit/releases/download/4.1.1/4.1.1.zip",
-    "sha1": "b7788679a19709c1c583e750d6e274883feaf26c"
+    "sha1": "26aceacd9a02058480846190fc30363a21a3b16a"
   },
-  "vendored_frameworks": "*.framework",
-  "resources": "BaiduMapAPI_Map.framework/Resources/mapapi.bundle",
+  "vendored_frameworks": "BaiduMapKit/*.framework",
+  "resources": "BaiduMapKit/**/*.bundle",
   "frameworks": [
-    "CoreLocation",
-    "QuartzCore",
-    "OpenGLES",
-    "SystemConfiguration",
     "CoreGraphics",
+    "CoreLocation",
+    "CoreTelephony",
     "MobileCoreServices",
+    "OpenGLES",
+    "QuartzCore",
     "Security",
-    "CoreTelephony"
+    "SystemConfiguration"
   ],
   "libraries": [
     "sqlite3.0",
