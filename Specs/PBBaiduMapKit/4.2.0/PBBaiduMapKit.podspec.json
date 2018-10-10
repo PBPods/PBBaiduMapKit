@@ -1,0 +1,63 @@
+{
+  "name": "PBBaiduMapKit",
+  "version": "4.2.0",
+  "summary": "百度地图 iOS SDK",
+  "description": "百度地图iOS SDK：百度地图官方CocoaPods.\n百度地图iOS SDK是一套基于iOS 7.0及以上版本设备的应用程序接口，不仅提供展示地图的基本接口，还提供POI检索、路径规划、地图标注、离线地图、定位、周边雷达等丰富的LBS能力",
+  "homepage": "http://developer.baidu.com/map/index.php?title=iossdk",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "baidu map sdk": "dituapi_01@163.com"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "source": {
+    "http": "https://github.com/PBPods/PBBaiduMapKit/releases/download/4.2.0/4.2.0.zip",
+    "sha1": "349093eb7db9687033bebcc518a625a599cd6ad9"
+  },
+  "frameworks": [
+    "CoreGraphics",
+    "CoreLocation",
+    "CoreTelephony",
+    "MobileCoreServices",
+    "OpenGLES",
+    "QuartzCore",
+    "Security",
+    "SystemConfiguration"
+  ],
+  "libraries": [
+    "sqlite3.0",
+    "c++"
+  ],
+  "requires_arc": true,
+  "default_subspecs": "Map",
+  "subspecs": [
+    {
+      "name": "Map",
+      "vendored_frameworks": "Map/*.framework",
+      "resources": "Map/**/*.bundle",
+      "dependencies": {
+        "PBBaiduMapKit/Other": []
+      }
+    },
+    {
+      "name": "Walk",
+      "vendored_frameworks": "Walk/*.framework",
+      "resources": "Walk/**/*.bundle",
+      "dependencies": {
+        "PBBaiduMapKit/Other": []
+      }
+    },
+    {
+      "name": "Location",
+      "vendored_frameworks": "Location/*.framework"
+    },
+    {
+      "name": "Other",
+      "vendored_frameworks": "Other/*.framework"
+    }
+  ]
+}
