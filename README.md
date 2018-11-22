@@ -24,5 +24,5 @@ pod 'PBBaiduMapKit', '~> 4.2'
 
 # 百度用的 1.0 版本的 OpenSSL
 source 'https://github.com/PBPods/PBOpenSSL.git'
-pod 'openssl', '~> 1.0'
+pod 'openssl', '~> 1.0.0'
 ```
